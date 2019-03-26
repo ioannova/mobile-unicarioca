@@ -18,7 +18,11 @@ imcModulo.controller('imcController', function ($scope) {
         }
         $scope.exibeResultados = true;
     }
+    
 
+    $scope.mudaSobreIMC = function (){
+        $scope.sobreIMC = !$scope.sobreIMC;
+    }
     //Função para esconder os resultados
     $scope.esconderIMC = function () {
         $scope.exibeResultados = false;

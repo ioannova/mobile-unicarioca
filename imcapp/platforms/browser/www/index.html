@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html ng-app="imcApp">
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-        <!-- 1º passo: Adicionar o CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
-        
-        <script src="/www/js/App.js" type="text/javascript"></script>
-        
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-    </head>
-    <body ng-controller="imcController">
-        <div class="container">
-        <form>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1º passo: Adicionar o CDN -->
+    <script src="/www/js/angular.min.js"></script>
+
+    <script src="/www/js/App.js" type="text/javascript"></script>
+    <script rel="stylesheet" src="css/App.css"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/www/css/bootstrap.min.css">
+    <script src="/www/js/jquery.min.js"></script>
+    <script src="/www/js/bootstrap.min.js"></script>
+
+</head>
+
+<body ng-controller="imcController">
+    <div class="container col-md-6 col-md-offset-5 col-lg-6 col-lg-offset-5">
+        <form class="card">
+            <h2>Calculo de IMC</h2><br>
             <!-- Entrada de dados -->
             <div class="form-group">
                 <label>
-                    Peso(Kg):<input ng-model="peso" class="form-control"/>
+                    Peso(Kg):<input ng-model="peso" class="form-control" />
                 </label></br>
                 <label>
-                    Altura(m):<input ng-model="altura" class="form-control"/>
+                    Altura(m):<input ng-model="altura" class="form-control" />
                 </label></br>
                 <button ng-click="calcularIMC()" class="btn btn-success">
                     Calcular
@@ -37,15 +41,46 @@
 
             <!-- Saída da informação -->
             <div ng-show="exibeResultados">
-                <hr/>
-                <div> 
-                    IMC: {{ imc | number }}
-                </div>
-                <div>
-                    Situação: {{ situacao }}
-                </div>
+                <hr />
+                <b>
+                    <div>
+                        IMC: {{ imc | number }}
+                    </div>
+                    <div>
+                        Situação: {{ situacao }}
+                    </div>
+                </b>
+                <br><br>
             </div>
+
+            <button ng-click="mudaSobreIMC()" class="btn btn-info">
+                O que é IMC?
+            </button><br><br>
+                <div ng-show="sobreIMC" class="card-body col-md-6 col-sm-6 col-lg-6 col-lg-6">
+                    <b>IMC</b> significa Índice de Massa Corporal e trata-se de uma medida do peso de cada pessoa,
+                        sendo
+                        uma
+                        relação entre a massa da pessoa e a sua altura.<br><br>
+
+                        Esta é uma medida de referência internacional reconhecida pela OMS (Organização Mundial da
+                        Saúde),
+                        mas que não mede diretamente a gordura corporal, porque não contempla a massa magra, massa
+                        gorda,
+                        líquidos e a estrutura óssea da pessoa em questão.<br><br>
+
+                        Os dados de referência para um adulto estão indicados abaixo:<br><br>
+
+                        < 18,5 - Abaixo do peso<br>
+                            18,5-24,9 - Normal<br>
+                            25,0-29,9 - Excesso de peso<br>
+                            30,0-34,9 - Obesidade Leve (Grau I)<br>
+                            35,0-39,9 - Obesidade Severa (Grau II)<br>
+                            > 40,0 - Obesidade Mórbida (Grau III)<br><br>
+
+                            <i>Obs: É importante lembrar que essa tabela não é válida para crianças.</i>
+                </div>
         </form>
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>
