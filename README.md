@@ -13,4 +13,4 @@ Neste repositório irei centralizar todas as aplicações criadas ao longo do cu
 -- Caso o preço álcool esteja acima de 70% do preço da gasolina, a aplicação indica que é melhor abastecer com gasolina.
 -- Se o álcool estiver abaixo de 70% o preço da gasolina, a aplicação indica que é melhor abastecer com álcool.
 
-<a href="https://imgbb.com/"><img src="https://i.ibb.co/Pt4g7jG/Captura-de-tela-em-2019-03-25-21-50-54.png" alt="Captura-de-tela-em-2019-03-25-21-50-54" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image uploader</a><br />
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/FnftQJz/Captura-de-tela-em-2019-03-25-22-21-09.png" alt="Captura-de-tela-em-2019-03-25-22-21-09" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>image uploader</a><br />
