@@ -1,5 +1,5 @@
-# aps-dev-mobile
-UniCarioca - Atividade pratica supervisionada e exercícios da disciplina Desenvolvimento Mobile
+# mobile-unicarioca (UniCarioca - Desenvolvimento Mobile)
+
 
 Neste repositório irei centralizar todas as aplicações criadas ao longo do curso de Desenvolvimento de Aplicações Móveis.
 
