@@ -1,4 +1,4 @@
-# mobile-unicarioca (UniCarioca - Desenvolvimento Mobile)
+# UniCarioca - Desenvolvimento Mobile
 
 
 Neste repositório irei centralizar todas as aplicações criadas ao longo do curso de Desenvolvimento de Aplicações Móveis.
