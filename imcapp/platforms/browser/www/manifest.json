@@ -4,7 +4,7 @@
   "name": "Calculo IMC",
   "short_name": "Calculo IMC",
   "version": "org.sergiolopes.garconapp",
-  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "description": "Aplicativo simples para calcular IMC.",
   "author": "Apache Cordova Team",
   "icons": [],
   "start_url": "index.html"
