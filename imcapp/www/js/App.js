@@ -19,7 +19,7 @@ imcModulo.controller('imcController', function ($scope) {
         $scope.exibeResultados = true;
     }
     
-
+    //Função para exibir e ocultar "O que é IMC?"
     $scope.mudaSobreIMC = function (){
         $scope.sobreIMC = !$scope.sobreIMC;
     }
