@@ -1,14 +1,12 @@
-1: Crie o arquivo ~/.android/repositories.cfg
+#1: Crie o arquivo ~/.android/repositories.cfg
 $touch ~/.android/repositories.cfg
-_____
-2: Insira o texto dentro do arquivo
+
+#2: Insira o texto dentro do arquivo
 
 ### User Sources for Android SDK Manager
 #Fri Nov 03 10:11:27 CET 2017 count=0
 
-_____
-_____
-3: Atualize a lista de repositórios e concorde com as licenças de uso
+#3: Atualize a lista de repositórios e concorde com as licenças de uso
 
 $./Android/Sdk/tools/bin/sdkmanager --update
 $./Android/Sdk/tools/bin/sdkmanager --licenses
